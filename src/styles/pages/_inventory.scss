@@ -1,0 +1,11 @@
+@import "../commons/configure";
+@import "../commons/utils";
+
+#content {
+  background-color: $neutral-50 !important;
+
+  .inventory {
+    background-color: $neutral-25;
+    border-radius: $radius-md 0 0 0;
+  }
+}

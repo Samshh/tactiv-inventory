@@ -1,0 +1,11 @@
+.sidebar {
+  width: torem(250);
+  height: 100vh;
+  .sidebar-upper {
+    gap: $spacing-sm-2;
+    .logo {
+      width: torem(106);
+      object-fit: contain;
+    }
+  }
+}
