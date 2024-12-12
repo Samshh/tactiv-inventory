@@ -35,15 +35,42 @@
       .inventory-container {
         flex-grow: 1;
         overflow: auto;
-        
+
         .inventory-tabs {
           gap: $spacing-sm;
           .inventory-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
             width: torem(296);
             flex-grow: 1;
             background-color: $neutral-25;
             border-radius: $radius-normal;
             overflow-y: auto;
+            padding: $spacing-xs-2 $spacing-sm-2;
+            gap: $spacing-xs-2;
+
+            .card-title {
+              color: $neutral-900;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: torem(24);
+              gap: $spacing-xs-2;
+              padding-left: $spacing-xs-2;
+              padding-right: $spacing-xs-2;
+
+              .card-count {
+                background-color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $radius-xs;
+                height: torem(20);
+                width: torem(26);
+              }
+            }
           }
         }
       }

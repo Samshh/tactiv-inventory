@@ -1,0 +1,12 @@
+.card {
+  &-inventory {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid $neutral-50;
+    background-color: $white;
+    border-radius: $radius-sm;
+    min-height: torem(124.5);
+    padding: $spacing-sm-2 $spacing-md;
+  }
+}
