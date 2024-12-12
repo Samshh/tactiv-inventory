@@ -97,7 +97,30 @@
           </button>
         </div>
       </div>
-      <div class="w-100 mt-2 px-4 py-2 w-100 inventory">asd</div>
+      <div class="w-100 mt-2 w-100 inventory">
+        <div class="inventory-upper px-4 py-2 d-flex">
+          <p class="m-0 title">All job orders</p>
+          <div class="d-flex inventory-upper-btns">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control search"
+                  id="exampleInputText1"
+                  aria-describedby="textHelp"
+                  placeholder="Search JO, client name, car model or m..."
+                />
+              </div>
+            </form>
+            <button type="button" class="btn-default">
+              <i class="ph ph-funnel icon"></i>Filters
+            </button>
+            <div class="v-separator"></div>
+            <button type="button" class="btn-blue-500"><i class="ph ph-plus icon"></i>Create job</button>
+          </div>
+        </div>
+        <div class="separator"></div>
+      </div>
     </div>
   </body>
 </html>

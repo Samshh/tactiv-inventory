@@ -7,5 +7,27 @@
   .inventory {
     background-color: $white;
     border-radius: $radius-md 0 0 0;
+    padding-right: 0 !important;
+
+    .inventory-upper {
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        color: $neutral-900;
+        font-size: $basefont;
+      }
+
+      &-btns {
+        gap: $spacing-sm-2;
+        justify-content: center;
+        align-items: center;
+
+        .v-separator {
+          width: 1px;
+          height: torem(33);
+          background-color: $neutral-200;
+        }
+      }
+    }
   }
 }
