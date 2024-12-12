@@ -1,0 +1,56 @@
+.btn {
+  &-sidebar {
+    width: 100%;
+    display: flex;
+    gap: $spacing-xs-2;
+    justify-content: start;
+    align-items: center;
+    padding: $spacing-xs-2;
+    border-radius: $radius-sm;
+    font-size: $normal;
+    color: $neutral-900;
+    border: none;
+    background-color: transparent;
+
+    .icon, .icon-lower {
+      width: torem(20);
+      height: torem(20);
+      font-size: $h6-2;
+      color: $neutral-300;
+    }
+
+    .icon-lower {
+      color: $neutral-900 !important;
+    }
+  }
+
+  &-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $spacing-sm-2;
+    background-color: $white;
+    border: none;
+    border-radius: $radius-sm;
+    font-size: $normal;
+    box-shadow: $shadow-xs;
+  }
+}
+
+.btn {
+  &-sidebar.active {
+    background-color: $neutral-100;
+    .icon {
+      color: $neutral-900;
+    }
+  }
+}
+
+.btn-sidebar:hover {
+  background-color: $neutral-100;
+  color: $neutral-900;
+  .icon {
+    color: $neutral-900;
+  }
+}

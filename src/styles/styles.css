@@ -15,7 +15,7 @@
 /* Shadows */
 @font-face {
   font-family: "Inter Regular";
-  src: url("../../assets/fonts/Inter/Inter-Regular.otf");
+  src: url("../assets/fonts/Inter/Inter-Regular.otf");
   font-display: swap;
   font-style: "normal";
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@
 }
 @font-face {
   font-family: "Inter Medium";
-  src: url("../../assets/fonts/Inter/Inter-Medium.otf");
+  src: url("../assets/fonts/Inter/Inter-Medium.otf");
   font-display: swap;
   font-style: "normal";
   -webkit-font-smoothing: antialiased;
@@ -31,7 +31,7 @@
 }
 @font-face {
   font-family: "Inter SemiBold";
-  src: url("../../assets/fonts/Inter/Inter-SemiBold.otf");
+  src: url("../assets/fonts/Inter/Inter-SemiBold.otf");
   font-display: swap;
   font-style: "normal";
   -webkit-font-smoothing: antialiased;
@@ -39,7 +39,7 @@
 }
 @font-face {
   font-family: "Inter Bold";
-  src: url("../../assets/fonts/Inter/Inter-Bold.otf");
+  src: url("../assets/fonts/Inter/Inter-Bold.otf");
   font-display: swap;
   font-style: "normal";
   -webkit-font-smoothing: antialiased;
@@ -2065,14 +2065,76 @@ body * {
 .sidebar {
   width: 15.625rem;
   height: 100vh;
+  gap: 1.1875rem;
+  justify-content: space-between;
+  align-items: start;
 }
-.sidebar .sidebar-upper {
+.sidebar .sidebar-inner {
+  gap: 1.1875rem;
+}
+.sidebar .sidebar-inner .sidebar-upper {
   gap: 0.75rem;
 }
-.sidebar .sidebar-upper .logo {
+.sidebar .sidebar-inner .sidebar-upper .logo {
   width: 6.625rem;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.sidebar .sidebar-label {
+  color: #676767;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-align: start;
+}
+
+.btn-sidebar {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #141414;
+  border: none;
+  background-color: transparent;
+}
+.btn-sidebar .icon, .btn-sidebar .icon-lower {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  color: #bdbdbd;
+}
+.btn-sidebar .icon-lower {
+  color: #141414 !important;
+}
+.btn-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.btn-sidebar.active {
+  background-color: #e6e6e6;
+}
+.btn-sidebar.active .icon {
+  color: #141414;
+}
+
+.btn-sidebar:hover {
+  background-color: #e6e6e6;
+  color: #141414;
+}
+.btn-sidebar:hover .icon {
+  color: #141414;
 }
 
 /* COLORS
@@ -2090,9 +2152,9 @@ body * {
  * @desc : converts PX values to REM;
  */
 #content {
-  background-color: #eaeaea !important;
+  background-color: #f7f7f7 !important;
 }
 #content .inventory {
-  background-color: #f7f7f7;
+  background-color: #fff;
   border-radius: 1rem 0 0 0;
 }/*# sourceMappingURL=styles.css.map */

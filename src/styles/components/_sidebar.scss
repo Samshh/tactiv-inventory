@@ -1,11 +1,26 @@
 .sidebar {
   width: torem(250);
   height: 100vh;
-  .sidebar-upper {
-    gap: $spacing-sm-2;
-    .logo {
-      width: torem(106);
-      object-fit: contain;
+  gap: torem(19);
+  justify-content: space-between;
+  align-items: start;
+
+  .sidebar-inner {
+    gap: torem(19);
+    .sidebar-upper {
+      gap: $spacing-sm-2;
+
+      .logo {
+        width: torem(106);
+        object-fit: contain;
+      }
     }
+  }
+
+  .sidebar-label {
+    color: $neutral-500;
+    text-transform: uppercase;
+    font-size: $small;
+    text-align: start;
   }
 }

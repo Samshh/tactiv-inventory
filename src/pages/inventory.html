@@ -9,17 +9,93 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://cdn.tactivstudios.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tactivstudios.com/icons/phosphoricons/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tactivstudios.com/icons/phosphoricons/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tactivstudios.com/icons/phosphoricons/thin/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tactivstudios.com/icons/phosphoricons/bold/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tactivstudios.com/icons/phosphoricons/duotone/style.css"
+    />
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <div id="content" class="d-flex bg-light w-100">
-      <div class="p-3 d-flex flex-column sidebar">
-        <div class="sidebar-upper d-flex flex-column">
-          <img class="logo" src="../assets/logos/tactiv-logo.png" alt="tactiv-logo">
-          <div>asd</div>
+      <div class="p-3 d-flex flex-column sidebar noselect">
+        <div class="d-flex flex-column w-100 sidebar-inner">
+          <div class="sidebar-upper d-flex flex-column">
+            <img
+              class="logo"
+              src="../assets/logos/tactiv-logo.png"
+              alt="tactiv-logo"
+            />
+            <div class="dropdown">
+              <button
+                class="btn-dropdown dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Maa-Main Branch
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="sidebar-label">general</div>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-lightning icon"></i>Dashboard
+            </button>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-notepad icon"></i>Services
+            </button>
+            <button type="button" class="btn-sidebar active">
+              <i class="ph-fill ph-medium-logo icon"></i>Inventory
+            </button>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-chart-bar icon"></i>Reports
+            </button>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="sidebar-label">your entity</div>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-buildings icon"></i>Company Profile
+            </button>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-user-switch icon"></i>User roles
+            </button>
+            <button type="button" class="btn-sidebar">
+              <i class="ph-fill ph-users-three icon"></i>All members
+            </button>
+          </div>
         </div>
-        <div></div>
-        <div></div>
+        <div class="d-flex flex-column w-100">
+          <button type="button" class="btn-sidebar">
+            <i class="ph-fill ph-poker-chip icon-lower"></i>Help center
+          </button>
+          <button type="button" class="btn-sidebar">
+            <i class="ph-fill ph-gear icon-lower"></i>Settings
+          </button>
+        </div>
       </div>
       <div class="w-100 mt-2 px-4 py-2 w-100 inventory">asd</div>
     </div>
