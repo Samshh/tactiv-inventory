@@ -3,29 +3,48 @@
 
 #content {
   background-color: $neutral-25 !important;
+  .inventory-wrapper {
+    height: 100vh;
+    overflow: auto;
+    .inventory {
+      background-color: $white;
+      border-radius: $radius-md 0 0 0;
+      padding-right: 0 !important;
 
-  .inventory {
-    background-color: $white;
-    border-radius: $radius-md 0 0 0;
-    padding-right: 0 !important;
+      .inventory-upper {
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          color: $neutral-900;
+          font-size: $basefont;
+        }
 
-    .inventory-upper {
-      justify-content: space-between;
-      align-items: center;
-      .title {
-        color: $neutral-900;
-        font-size: $basefont;
+        &-btns {
+          gap: $spacing-sm-2;
+          justify-content: center;
+          align-items: center;
+
+          .v-separator {
+            width: 1px;
+            height: torem(33);
+            background-color: $neutral-200;
+          }
+        }
       }
 
-      &-btns {
-        gap: $spacing-sm-2;
-        justify-content: center;
-        align-items: center;
-
-        .v-separator {
-          width: 1px;
-          height: torem(33);
-          background-color: $neutral-200;
+      .inventory-container {
+        flex-grow: 1;
+        overflow: auto;
+        
+        .inventory-tabs {
+          gap: $spacing-sm;
+          .inventory-cards {
+            width: torem(296);
+            flex-grow: 1;
+            background-color: $neutral-25;
+            border-radius: $radius-normal;
+            overflow-y: auto;
+          }
         }
       }
     }

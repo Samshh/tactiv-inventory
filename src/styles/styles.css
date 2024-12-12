@@ -2063,7 +2063,7 @@ body * {
 }
 
 .sidebar {
-  width: 15.625rem;
+  min-width: 15.625rem;
   height: 100vh;
   gap: 1.1875rem;
   justify-content: space-between;
@@ -2214,26 +2214,44 @@ body * {
 #content {
   background-color: #f7f7f7 !important;
 }
-#content .inventory {
+#content .inventory-wrapper {
+  height: 100vh;
+  overflow: auto;
+}
+#content .inventory-wrapper .inventory {
   background-color: #fff;
   border-radius: 1rem 0 0 0;
   padding-right: 0 !important;
 }
-#content .inventory .inventory-upper {
+#content .inventory-wrapper .inventory .inventory-upper {
   justify-content: space-between;
   align-items: center;
 }
-#content .inventory .inventory-upper .title {
+#content .inventory-wrapper .inventory .inventory-upper .title {
   color: #141414;
   font-size: 1rem;
 }
-#content .inventory .inventory-upper-btns {
+#content .inventory-wrapper .inventory .inventory-upper-btns {
   gap: 0.75rem;
   justify-content: center;
   align-items: center;
 }
-#content .inventory .inventory-upper-btns .v-separator {
+#content .inventory-wrapper .inventory .inventory-upper-btns .v-separator {
   width: 1px;
   height: 2.0625rem;
   background-color: #d9d9d9;
+}
+#content .inventory-wrapper .inventory .inventory-container {
+  flex-grow: 1;
+  overflow: auto;
+}
+#content .inventory-wrapper .inventory .inventory-container .inventory-tabs {
+  gap: 0.625rem;
+}
+#content .inventory-wrapper .inventory .inventory-container .inventory-tabs .inventory-cards {
+  width: 18.5rem;
+  flex-grow: 1;
+  background-color: #f7f7f7;
+  border-radius: 0.75rem;
+  overflow-y: auto;
 }/*# sourceMappingURL=styles.css.map */
