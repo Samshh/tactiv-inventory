@@ -48,7 +48,7 @@
                 class="btn-dropdown dropdown-toggle"
                 type="button"
                 id="dropdownMenuButton"
-                data-toggle="dropdown"
+                data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
@@ -133,7 +133,13 @@
                   Pending
                   <div class="card-count">4</div>
                 </div>
-                <button type="button" class="card-inventory">
+                <button
+                  type="button"
+                  class="card-inventory"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
                   <div class="card-heading">
                     <div class="username">Jan Earvin G.</div>
                     <div class="tag">
@@ -189,6 +195,42 @@
         </div>
       </div>
       <!-- Inventory ends here -->
+    </div>
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-end offcanvas-inventory"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-body">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="offcanvas-sidebar">
+          <div class="offcanvas-sidebar-heading">
+            <div class="offcanvas-sidebar-heading-upper">
+              <div class="offcanvas-sidebar-heading-upper-joborder">
+                <p class="m-0 text">Job order</p>
+                <div class="d-flex gap-1">
+                  #9183
+                  <div class="copy">copy<i class="ph ph-copy-simple copy-icon"></i></div>
+                </div>
+              </div>
+              <div class="offcanvas-sidebar-heading-upper-authordate">
+                <p>By Restie Antiquin</p>
+                <p>On Dec 8, 2024</p>
+              </div>
+            </div>
+            <div class="offcanvas-sidebar-heading-lower">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
