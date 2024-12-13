@@ -8,5 +8,91 @@
     border-radius: $radius-sm;
     min-height: torem(124.5);
     padding: $spacing-sm-2 $spacing-md;
+    box-shadow: $shadow-md;
+    gap: $spacing-xs-2;
+
+    .card-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-height: torem(20);
+
+      .username {
+        color: $neutral-900;
+        font-size: $basefont;
+      }
+
+      .tag {
+        color: $neutral-500;
+        .copy {
+          font-size: $basefont;
+          width: torem(16);
+          height: torem(16);
+          color: $neutral-300;
+        }
+      }
+    }
+
+    .date-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .date {
+        font-size: $small;
+        color: $neutral-500;
+      }
+      .icons {
+        display: flex;
+        gap: $spacing-xs;
+        .icon {
+          width: torem(18);
+          height: torem(18);
+          border-radius: $radius-md;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .auto-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: torem(24);
+      .type {
+        color: $neutral-900;
+        font-size: $normal;
+      }
+
+      .plate {
+        color: $neutral-900;
+        font-size: $normal;
+        border-radius: $radius-xs;
+        background-color: $neutral-25;
+        padding: $spacing-xs $spacing-xs-2;
+      }
+    }
+
+    .days {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 100%;
+      height: torem(14);
+      .in-column {
+        font-size: $xsmall;
+        color: $error-500;
+        background-color: $neutral-25;
+        padding: 0 $spacing-xs;
+      }
+    }
+  }
+
+  &-separator {
+    width: 100%;
+    height: torem(1);
+    background-color: $neutral-25;
   }
 }
