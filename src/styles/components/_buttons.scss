@@ -110,4 +110,19 @@
     box-shadow: $shadow-xs;
     height: torem(40);
   }
+
+  &-dropdown-black {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $spacing-sm-2;
+    background-color: $black;
+    border: none;
+    border-radius: $radius-sm;
+    font-size: $normal;
+    box-shadow: $shadow-xs;
+    height: torem(40);
+    color: $white;
+  }
 }
