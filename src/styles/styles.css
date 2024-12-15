@@ -2443,6 +2443,15 @@ body * {
   align-items: center;
   gap: 0.5rem;
 }
+.offcanvas-inventory .offcanvas-body .offcanvas-sidebar-content .vehicle-photos .photo {
+  width: 5.3125rem;
+  height: 5.3125rem;
+  border-radius: 0.5rem;
+}
+.offcanvas-inventory .offcanvas-body .offcanvas-sidebar-content .vehicle-history {
+  position: relative;
+}
+
 /* COLORS
  *
  */

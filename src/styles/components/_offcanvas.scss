@@ -161,8 +161,14 @@
             gap: $spacing-xs-2;
 
             .photo {
-              
+              width: torem(85);
+              height: torem(85);
+              border-radius: $radius-sm;
             }
+          }
+
+          .vehicle-history {
+            position: relative;
           }
         }
       }
