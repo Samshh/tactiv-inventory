@@ -109,7 +109,7 @@
                 <div class="form-group">
                   <input
                     type="text"
-                    class="form-control search"
+                    class="form-control input-search"
                     id="exampleInputText1"
                     aria-describedby="textHelp"
                     placeholder="Search JO, client name, car model or m..."
@@ -214,7 +214,7 @@
           <div class="offcanvas-sidebar-heading">
             <div class="offcanvas-sidebar-heading-upper">
               <div class="offcanvas-sidebar-heading-upper-joborder">
-                <p class="m-0 text">JOB ORDER</p>
+                <p class="m-0 text">Job order</p>
                 <div class="d-flex gap-1">
                   #9183
                   <div class="copy">
@@ -299,6 +299,119 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="offcanvas-main">
+          <div class="offcanvas-main-heading">Scope of work</div>
+          <div class="offcanvas-main-content">
+            <p class="title">Parts</p>
+            <div class="table-offcanvas">
+              <div class="table-row-title">
+                <p class="table-column-title table-col-large">Selected part</p>
+                <p class="table-column-title table-col">Quantity</p>
+                <p class="table-column-title table-col">Cost</p>
+                <div></div>
+              </div>
+              <div class="table-row">
+                <div class="table-col-large">
+                  <p class="parts-id">#9203</p>
+                  <p>Car Battery - AMARON PRO</p>
+                </div>
+                <div class="table-col">1</div>
+                <div class="table-col">P13,203.33</div>
+                <i class="ph ph-dots-three-vertical table-icon"></i>
+              </div>
+              <div class="table-row">
+                <div class="table-col-large">
+                  <p class="parts-id">#9202</p>
+                  <p>Brake Pads - FUSION BRAKE</p>
+                </div>
+                <div class="table-col">2</div>
+                <div class="table-col">P47,133</div>
+                <i class="ph ph-dots-three-vertical table-icon"></i>
+              </div>
+              <button type="button" class="btn-ghost">
+                <i class="ph-bold ph-plus table-icon offcanvas-btn-blue"></i>
+                <p class="offcanvas-btn-blue">Add part</p>
+              </button>
+            </div>
+          </div>
+          <div class="offcanvas-main-content">
+            <p class="title">Services</p>
+            <div class="table-offcanvas">
+              <div class="table-row-title">
+                <p class="table-column-title table-col-large">
+                  Selected services
+                </p>
+                <p class="table-column-title table-col">Assignee</p>
+                <p class="table-column-title table-col">Rate</p>
+                <div></div>
+              </div>
+              <div class="table-row">
+                <div class="table-col-large">
+                  <p>Change oil</p>
+                </div>
+                <div class="table-col">
+                  <img
+                    class="services-img"
+                    src="/src/assets/icons/laufey.jpg"
+                    alt=""
+                  />
+                  <p>Cris F.</p>
+                </div>
+                <div class="table-col">1,000.00</div>
+                <i class="ph ph-dots-three-vertical table-icon"></i>
+              </div>
+              <div class="table-row">
+                <div class="table-col-large">
+                  <p>Wheel alignment</p>
+                </div>
+                <div class="table-col">
+                  <img
+                    class="services-img"
+                    src="/src/assets/icons/laufey.jpg"
+                    alt=""
+                  />
+                  <p>Marryjane E.</p>
+                </div>
+                <div class="table-col">1,000.00</div>
+                <i class="ph ph-dots-three-vertical table-icon"></i>
+              </div>
+              <div class="table-row">
+                <div class="table-col-large">
+                  <p>Engine Diagnostic and Repair</p>
+                </div>
+                <div class="table-col">
+                  <img
+                    class="services-img"
+                    src="/src/assets/icons/laufey.jpg"
+                    alt=""
+                  />
+                  <p>Angelica O.</p>
+                </div>
+                <div class="table-col">450.00</div>
+                <i class="ph ph-dots-three-vertical table-icon"></i>
+              </div>
+              <form class="services-inputs">
+                <div class="form-group">
+                  <input type="text" class="input-offcanvas-services form-control" id="services1" aria-describedby="textHelp" placeholder="Tire, Wheel">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="services2" aria-describedby="textHelp" placeholder="Select">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="services3" aria-describedby="textHelp" placeholder="P">
+                </div>
+                <i class="ph ph-check icon table-icon"></i>
+              </form>
+              <button type="button" class="btn-ghost">
+                <i class="ph-bold ph-plus table-icon offcanvas-btn-blue"></i>
+                <p class="offcanvas-btn-blue">Add part</p>
+              </button>
+            </div>
+          </div>
+          <div class="offcanvas-main-invoice">
+            asd
           </div>
         </div>
       </div>

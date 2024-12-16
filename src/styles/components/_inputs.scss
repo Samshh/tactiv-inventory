@@ -1,9 +1,9 @@
-.search {
-  min-width: 320px;
-  width: 100%;
-  height: torem(36);
-
-  ::placeholder {
-    color: $white;
+.input {
+  &-search {
+    min-width: 320px;
+    height: torem(36);
+  }
+  &-offcanvas-services {
+    width: torem(450) !important;
   }
 }

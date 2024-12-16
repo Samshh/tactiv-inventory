@@ -125,4 +125,14 @@
     height: torem(40);
     color: $white;
   }
+
+  &-ghost {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: $spacing-xs-2;
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+  }
 }

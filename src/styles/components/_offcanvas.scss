@@ -6,6 +6,7 @@
     .offcanvas-body {
       display: flex;
       padding: 0;
+      flex-grow: 1;
 
       .btn-close {
         position: absolute;
@@ -211,6 +212,46 @@
               }
             }
           }
+        }
+      }
+
+      .offcanvas-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: torem(20);
+        flex-grow: 1;
+        gap: $spacing-xs-2;
+
+        &-heading {
+          font-size: $h6;
+        }
+
+        &-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          padding: $spacing-md 0;
+          gap: $spacing-md;
+          width: 100%;
+
+          .title {
+            font-size: $basefont;
+          }
+        }
+
+        &-invoice {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          padding: torem(20);
+          gap: $spacing-xs-2;
+          background-color: $base-gray;
+          width: 100%;
+          border-radius: $radius-sm;
         }
       }
     }
