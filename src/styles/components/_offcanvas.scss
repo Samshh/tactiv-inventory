@@ -104,7 +104,7 @@
           display: flex;
           flex-direction: column;
           width: 100%;
-          justify-content: center;
+          justify-content: start;
           align-items: start;
           padding-top: $spacing-md;
           padding-bottom: $spacing-md;
@@ -112,7 +112,6 @@
 
           .title {
             font-size: $xsmall;
-            text-transform: uppercase;
             color: $neutral-500;
           }
 
@@ -166,9 +165,51 @@
               border-radius: $radius-sm;
             }
           }
+        }
+        .vehicle-history {
+          display: flex;
+          border-top: 1px solid $neutral-200;
 
-          .vehicle-history {
-            position: relative;
+          .history-bar {
+            position: absolute;
+            bottom: torem(20);
+            height: torem(75);
+            left: torem(2.49);
+            width: torem(1);
+            background-color: $neutral-200;
+          }
+
+          .history-details {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: $spacing-xs;
+
+            .circle {
+              width: torem(6);
+              height: torem(6);
+              border-radius: $radius-sm;
+              color: $neutral-200;
+              margin-top: torem(5);
+              font-size: torem(6);
+            }
+
+            .history-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+              gap: $spacing-xs;
+              
+              .date-time {
+                font-size: $small;
+                color: $neutral-500;
+              }
+
+              .text {
+                font-size: $small;
+              }
+            }
           }
         }
       }
